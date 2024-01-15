@@ -1,0 +1,201 @@
+,UTC,Message
+23102,1671407614.807,Dec 18 23:53:34 secpctbmgr1 6d23e148f79a[620]: INFO  updates.models attempting move from state: dl_checking
+23103,1671407614.81,Dec 18 23:53:34 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    finished job updates in 0.01437351480126381 seconds
+23104,1671407614.811,Dec 18 23:53:34 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: Job OK (cbbede5f-fb18-4cfb-8d10-9f9db714afad)
+23105,1671407614.812,"Dec 18 23:53:34 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    Result will never expire, clean up result key manually"
+23106,1671407634.0,Dec 18 23:53:54 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310559/532259] 192.254.64.11 () {36 vars in 550 bytes} [] GET /api-v1/node-manager/config-v2 => generated 0 bytes in 160 msecs (HTTP/1.0 304) 8 headers in 256 bytes (0 switches on core 0)
+23108,1671407642.0,"Dec 18 23:54:02 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""GET /api-v1/node-manager/cluster/config HTTP/1.0"" 404 4 ""-"" ""python-requests/2.21.0"""
+23107,1671407642.739,Dec 18 23:54:02 secpctbmgr1 aa95177baeb3[620]: WARNING  django.request Not Found: /api-v1/node-manager/cluster/config
+23109,1671407644.0,Dec 18 23:54:04 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310561/532261] 192.254.64.11 () {40 vars in 595 bytes} [] GET /api-v1/node-manager/auth => generated 0 bytes in 161 msecs (HTTP/1.0 200) 8 headers in 225 bytes (1 switches on core 0)
+23110,1671407646.0,Dec 18 23:54:06 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310562/532262] 192.254.64.11 () {40 vars in 588 bytes} [] GET /api-v1/node-manager/auth => generated 0 bytes in 161 msecs (HTTP/1.0 200) 8 headers in 225 bytes (1 switches on core 0)
+23111,1671407651.0,"Dec 18 23:54:11 secpctbmgr1 fc6bcab8e1d6[620]: 192.254.64.10 - - [] ""GET /api-v1/node-manager/app-version HTTP/1.0"" 200 61 ""-"" ""curl/7.64.0"""
+23112,1671407652.0,"Dec 18 23:54:12 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""GET /api-v1/node-manager/app-version HTTP/1.0"" 200 61 ""-"" ""curl/7.64.0"""
+23113,1671407664.0,Dec 18 23:54:24 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310565/532265] 192.254.64.11 () {36 vars in 549 bytes} [] GET /api-v1/node-manager/config-v2 => generated 0 bytes in 160 msecs (HTTP/1.0 304) 8 headers in 256 bytes (0 switches on core 0)
+23114,1671407665.0,Dec 18 23:54:25 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310566/532266] 192.254.64.11 () {38 vars in 560 bytes} [] POST /api-v1/node-manager/metrics/vpp-v2 => generated 0 bytes in 267 msecs (HTTP/1.0 201) 7 headers in 206 bytes (1 switches on core 0)
+23115,1671407674.789,Dec 18 23:54:34 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: execute() (cbbede5f-fb18-4cfb-8d10-9f9db714afad)
+23116,1671407674.798,Dec 18 23:54:34 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    Running job updates
+23117,1671407674.809,Dec 18 23:54:34 secpctbmgr1 6d23e148f79a[620]: INFO  updates.models attempting move from state: dl_checking
+23118,1671407674.812,Dec 18 23:54:34 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    finished job updates in 0.013771987985819578 seconds
+23119,1671407674.813,Dec 18 23:54:34 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: Job OK (cbbede5f-fb18-4cfb-8d10-9f9db714afad)
+23120,1671407694.0,Dec 18 23:54:54 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310567/532267] 192.254.64.11 () {36 vars in 550 bytes} [] GET /api-v1/node-manager/config-v2 => generated 0 bytes in 160 msecs (HTTP/1.0 304) 8 headers in 256 bytes (0 switches on core 0)
+23123,1671407702.0,Dec 18 23:55:03 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310568/532268] 192.254.64.11 () {36 vars in 536 bytes} [] GET /api-v1/node-manager/cluster/config => generated 4 bytes in 163 msecs (HTTP/1.0 404) 8 headers in 248 bytes (1 switches on core 0)
+23122,1671407703.0,"Dec 18 23:55:03 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""GET /api-v1/node-manager/cluster/config HTTP/1.0"" 404 4 ""-"" ""python-requests/2.21.0"""
+23121,1671407703.071,Dec 18 23:55:03 secpctbmgr1 aa95177baeb3[620]: WARNING  django.request Not Found: /api-v1/node-manager/cluster/config
+23124,1671407705.0,Dec 18 23:55:05 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310569/532269] 192.254.64.11 () {40 vars in 596 bytes} [] GET /api-v1/node-manager/auth => generated 0 bytes in 162 msecs (HTTP/1.0 200) 8 headers in 225 bytes (1 switches on core 0)
+23125,1671407708.0,Dec 18 23:55:09 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310570/532270] 192.254.64.11 () {40 vars in 589 bytes} [] GET /api-v1/node-manager/auth => generated 0 bytes in 162 msecs (HTTP/1.0 200) 8 headers in 225 bytes (1 switches on core 0)
+23126,1671407709.0,"Dec 18 23:55:09 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""POST /telegraf HTTP/1.0"" 204 0 ""-"" ""Telegraf/1.19.1-titan Go/1.16.5"""
+23127,1671407711.0,"Dec 18 23:55:11 secpctbmgr1 fc6bcab8e1d6[620]: 192.254.64.10 - - [] ""GET /api-v1/node-manager/app-version HTTP/1.0"" 200 61 ""-"" ""curl/7.64.0"""
+23129,1671407712.0,Dec 18 23:55:13 secpctbmgr1 aa95177baeb3[620]: [pid: 33|app: 0|req: 221624/532272] 192.254.64.11 () {34 vars in 482 bytes} [] GET /api-v1/node-manager/app-version => generated 61 bytes in 161 msecs (HTTP/1.0 200) 8 headers in 240 bytes (1 switches on core 0)
+23128,1671407713.0,"Dec 18 23:55:13 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""GET /api-v1/node-manager/app-version HTTP/1.0"" 200 61 ""-"" ""curl/7.64.0"""
+23130,1671407724.0,Dec 18 23:55:24 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310571/532273] 192.254.64.11 () {36 vars in 550 bytes} [] GET /api-v1/node-manager/config-v2 => generated 0 bytes in 160 msecs (HTTP/1.0 304) 8 headers in 256 bytes (0 switches on core 0)
+23131,1671407725.0,Dec 18 23:55:25 secpctbmgr1 aa95177baeb3[620]: [pid: 33|app: 0|req: 221625/532274] 192.254.64.11 () {38 vars in 561 bytes} [] POST /api-v1/node-manager/metrics/vpp-v2 => generated 0 bytes in 275 msecs (HTTP/1.0 201) 7 headers in 206 bytes (1 switches on core 0)
+23132,1671407734.85,Dec 18 23:55:34 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: execute() (cbbede5f-fb18-4cfb-8d10-9f9db714afad)
+23133,1671407734.858,Dec 18 23:55:34 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    Running job updates
+23134,1671407734.869,Dec 18 23:55:34 secpctbmgr1 6d23e148f79a[620]: INFO  updates.models attempting move from state: dl_checking
+23135,1671407734.87,"Dec 18 23:55:34 secpctbmgr1 6d23e148f79a[620]: INFO  updates.models after move, update in state: dl_checking"
+23136,1671407734.875,Dec 18 23:55:34 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    finished job updates in 0.016976364888250828 seconds
+23137,1671407734.876,Dec 18 23:55:34 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: Job OK (cbbede5f-fb18-4cfb-8d10-9f9db714afad)
+23138,1671407734.877,"Dec 18 23:55:34 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    Result will never expire, clean up result key manually"
+23139,1671407754.0,Dec 18 23:55:54 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310572/532275] 192.254.64.11 () {36 vars in 550 bytes} [] GET /api-v1/node-manager/config-v2 => generated 0 bytes in 161 msecs (HTTP/1.0 304) 8 headers in 256 bytes (0 switches on core 0)
+23140,1671407761.0,Dec 18 23:56:01 secpctbmgr1 aa95177baeb3[620]: [pid: 33|app: 0|req: 221626/532276] 192.254.64.11 () {40 vars in 596 bytes} [] GET /api-v1/node-manager/auth => generated 0 bytes in 173 msecs (HTTP/1.0 200) 8 headers in 225 bytes (1 switches on core 0)
+23142,1671407763.0,"Dec 18 23:56:03 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""GET /api-v1/node-manager/cluster/config HTTP/1.0"" 404 4 ""-"" ""python-requests/2.21.0"""
+23141,1671407763.41,Dec 18 23:56:03 secpctbmgr1 aa95177baeb3[620]: WARNING  django.request Not Found: /api-v1/node-manager/cluster/config
+23143,1671407764.0,Dec 18 23:56:04 secpctbmgr1 aa95177baeb3[620]: [pid: 33|app: 0|req: 221628/532278] 192.254.64.11 () {40 vars in 589 bytes} [] GET /api-v1/node-manager/auth => generated 0 bytes in 161 msecs (HTTP/1.0 200) 8 headers in 225 bytes (1 switches on core 0)
+23144,1671407772.0,Dec 18 23:56:12 secpctbmgr1 aa95177baeb3[620]: [pid: 33|app: 0|req: 221629/532279] 192.254.64.11 () {34 vars in 489 bytes} [] GET /api-v1/node-manager/app-version => generated 61 bytes in 161 msecs (HTTP/1.0 200) 8 headers in 240 bytes (1 switches on core 0)
+23145,1671407773.0,"Dec 18 23:56:13 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""GET /api-v1/node-manager/app-version HTTP/1.0"" 200 61 ""-"" ""curl/7.64.0"""
+23146,1671407784.0,Dec 18 23:56:24 secpctbmgr1 aa95177baeb3[620]: [pid: 33|app: 0|req: 221630/532281] 192.254.64.11 () {36 vars in 550 bytes} [] GET /api-v1/node-manager/config-v2 => generated 0 bytes in 160 msecs (HTTP/1.0 304) 8 headers in 256 bytes (0 switches on core 0)
+23147,1671407785.0,Dec 18 23:56:25 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310574/532282] 192.254.64.11 () {38 vars in 561 bytes} [] POST /api-v1/node-manager/metrics/vpp-v2 => generated 0 bytes in 269 msecs (HTTP/1.0 201) 7 headers in 206 bytes (1 switches on core 0)
+23148,1671407792.092,Dec 18 23:56:32 secpctbmgr1 0fb947e570c1[620]: 1:M  * 100 changes in 300 seconds. Saving...
+23149,1671407792.095,Dec 18 23:56:32 secpctbmgr1 0fb947e570c1[620]: 12985:C  * DB saved on disk
+23150,1671407792.096,Dec 18 23:56:32 secpctbmgr1 0fb947e570c1[620]: 12985:C  * RDB: 0 MB of memory used by copy-on-write
+23151,1671407792.192,Dec 18 23:56:32 secpctbmgr1 0fb947e570c1[620]: 1:M  * Background saving terminated with success
+23152,1671407794.91,Dec 18 23:56:34 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: execute() (cbbede5f-fb18-4cfb-8d10-9f9db714afad)
+23153,1671407794.919,Dec 18 23:56:34 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    Running job updates
+23154,1671407794.93,Dec 18 23:56:34 secpctbmgr1 6d23e148f79a[620]: INFO  updates.models attempting move from state: dl_checking
+23155,1671407794.931,"Dec 18 23:56:34 secpctbmgr1 6d23e148f79a[620]: INFO  updates.models after move, update in state: dl_checking"
+23156,1671407794.933,Dec 18 23:56:34 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    finished job updates in 0.01419363496825099 seconds
+23157,1671407794.935,Dec 18 23:56:34 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: Job OK (cbbede5f-fb18-4cfb-8d10-9f9db714afad)
+23158,1671407814.0,Dec 18 23:56:54 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310575/532283] 192.254.64.11 () {36 vars in 550 bytes} [] GET /api-v1/node-manager/config-v2 => generated 0 bytes in 160 msecs (HTTP/1.0 304) 8 headers in 256 bytes (0 switches on core 0)
+23160,1671407822.0,"Dec 18 23:57:02 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""GET /api-v1/node-manager/cluster/config HTTP/1.0"" 404 4 ""-"" ""python-requests/2.21.0"""
+23159,1671407822.72,Dec 18 23:57:02 secpctbmgr1 aa95177baeb3[620]: WARNING  django.request Not Found: /api-v1/node-manager/cluster/config
+23161,1671407824.0,Dec 18 23:57:04 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310576/532285] 192.254.64.11 () {40 vars in 595 bytes} [] GET /api-v1/node-manager/auth => generated 0 bytes in 160 msecs (HTTP/1.0 200) 8 headers in 225 bytes (1 switches on core 0)
+23162,1671407828.0,Dec 18 23:57:08 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310577/532286] 192.254.64.11 () {40 vars in 588 bytes} [] GET /api-v1/node-manager/auth => generated 0 bytes in 160 msecs (HTTP/1.0 200) 8 headers in 225 bytes (1 switches on core 0)
+23163,1671407831.0,Dec 18 23:57:11 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310578/532287] 192.254.64.11 () {34 vars in 489 bytes} [] GET /api-v1/node-manager/app-version => generated 61 bytes in 161 msecs (HTTP/1.0 200) 8 headers in 240 bytes (1 switches on core 0)
+23164,1671407832.0,"Dec 18 23:57:12 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""GET /api-v1/node-manager/app-version HTTP/1.0"" 200 61 ""-"" ""curl/7.64.0"""
+23165,1671407844.0,Dec 18 23:57:24 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310580/532289] 192.254.64.11 () {36 vars in 550 bytes} [] GET /api-v1/node-manager/config-v2 => generated 0 bytes in 160 msecs (HTTP/1.0 304) 8 headers in 256 bytes (0 switches on core 0)
+23166,1671407845.0,Dec 18 23:57:25 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310581/532290] 192.254.64.11 () {38 vars in 561 bytes} [] POST /api-v1/node-manager/metrics/vpp-v2 => generated 0 bytes in 262 msecs (HTTP/1.0 201) 7 headers in 206 bytes (1 switches on core 0)
+23167,1671407854.961,Dec 18 23:57:34 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: execute() (cbbede5f-fb18-4cfb-8d10-9f9db714afad)
+23168,1671407854.97,Dec 18 23:57:34 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    Running job updates
+23169,1671407854.981,Dec 18 23:57:34 secpctbmgr1 6d23e148f79a[620]: INFO  updates.models attempting move from state: dl_checking
+23170,1671407854.982,"Dec 18 23:57:34 secpctbmgr1 6d23e148f79a[620]: INFO  updates.models after move, update in state: dl_checking"
+23171,1671407854.985,Dec 18 23:57:34 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    finished job updates in 0.014387928880751133 seconds
+23172,1671407854.986,Dec 18 23:57:34 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: Job OK (cbbede5f-fb18-4cfb-8d10-9f9db714afad)
+23173,1671407874.0,Dec 18 23:57:54 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310582/532291] 192.254.64.11 () {36 vars in 550 bytes} [] GET /api-v1/node-manager/config-v2 => generated 0 bytes in 160 msecs (HTTP/1.0 304) 8 headers in 256 bytes (0 switches on core 0)
+23175,1671407882.0,Dec 18 23:58:03 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310583/532292] 192.254.64.11 () {36 vars in 536 bytes} [] GET /api-v1/node-manager/cluster/config => generated 4 bytes in 164 msecs (HTTP/1.0 404) 8 headers in 248 bytes (1 switches on core 0)
+23176,1671407883.0,"Dec 18 23:58:03 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""GET /api-v1/node-manager/cluster/config HTTP/1.0"" 404 4 ""-"" ""python-requests/2.21.0"""
+23174,1671407883.061,Dec 18 23:58:03 secpctbmgr1 aa95177baeb3[620]: WARNING  django.request Not Found: /api-v1/node-manager/cluster/config
+23177,1671407886.0,Dec 18 23:58:06 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310584/532293] 192.254.64.11 () {40 vars in 589 bytes} [] GET /api-v1/node-manager/auth => generated 0 bytes in 169 msecs (HTTP/1.0 200) 8 headers in 225 bytes (1 switches on core 0)
+23178,1671407891.0,"Dec 18 23:58:11 secpctbmgr1 fc6bcab8e1d6[620]: 192.254.64.10 - - [] ""GET /api-v1/node-manager/app-version HTTP/1.0"" 200 61 ""-"" ""curl/7.64.0"""
+23180,1671407892.0,Dec 18 23:58:13 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310586/532296] 192.254.64.11 () {34 vars in 482 bytes} [] GET /api-v1/node-manager/app-version => generated 61 bytes in 161 msecs (HTTP/1.0 200) 8 headers in 240 bytes (1 switches on core 0)
+23179,1671407893.0,"Dec 18 23:58:13 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""GET /api-v1/node-manager/app-version HTTP/1.0"" 200 61 ""-"" ""curl/7.64.0"""
+23181,1671407904.0,Dec 18 23:58:24 secpctbmgr1 aa95177baeb3[620]: [pid: 33|app: 0|req: 221633/532297] 192.254.64.11 () {36 vars in 550 bytes} [] GET /api-v1/node-manager/config-v2 => generated 0 bytes in 161 msecs (HTTP/1.0 304) 8 headers in 256 bytes (0 switches on core 0)
+23182,1671407905.0,Dec 18 23:58:25 secpctbmgr1 aa95177baeb3[620]: [pid: 33|app: 0|req: 221634/532298] 192.254.64.11 () {38 vars in 561 bytes} [] POST /api-v1/node-manager/metrics/vpp-v2 => generated 0 bytes in 268 msecs (HTTP/1.0 201) 7 headers in 206 bytes (1 switches on core 0)
+23183,1671407915.006,Dec 18 23:58:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: execute() (cbbede5f-fb18-4cfb-8d10-9f9db714afad)
+23184,1671407915.015,Dec 18 23:58:35 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    Running job updates
+23185,1671407915.026,Dec 18 23:58:35 secpctbmgr1 6d23e148f79a[620]: INFO  updates.models attempting move from state: dl_checking
+23186,1671407915.027,"Dec 18 23:58:35 secpctbmgr1 6d23e148f79a[620]: INFO  updates.models after move, update in state: dl_checking"
+23187,1671407915.03,Dec 18 23:58:35 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    finished job updates in 0.014887247234582901 seconds
+23188,1671407915.031,Dec 18 23:58:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: Job OK (cbbede5f-fb18-4cfb-8d10-9f9db714afad)
+23189,1671407934.0,"Dec 18 23:58:54 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""GET /api-v1/node-manager/config-v2 HTTP/1.0"" 304 0 ""-"" ""Go-http-client/1.1"""
+23191,1671407943.0,"Dec 18 23:59:03 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""GET /api-v1/node-manager/cluster/config HTTP/1.0"" 404 4 ""-"" ""python-requests/2.21.0"""
+23190,1671407943.408,Dec 18 23:59:03 secpctbmgr1 aa95177baeb3[620]: WARNING  django.request Not Found: /api-v1/node-manager/cluster/config
+23192,1671407948.0,Dec 18 23:59:08 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310588/532301] 192.254.64.11 () {40 vars in 589 bytes} [] GET /api-v1/node-manager/auth => generated 0 bytes in 161 msecs (HTTP/1.0 200) 8 headers in 225 bytes (1 switches on core 0)
+23193,1671407951.0,Dec 18 23:59:12 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310589/532302] 192.254.64.11 () {40 vars in 596 bytes} [] GET /api-v1/node-manager/auth => generated 0 bytes in 162 msecs (HTTP/1.0 200) 8 headers in 225 bytes (1 switches on core 0)
+23194,1671407952.0,"Dec 18 23:59:12 secpctbmgr1 fc6bcab8e1d6[620]: 192.254.64.10 - - [] ""POST /telegraf HTTP/1.0"" 204 0 ""-"" ""Telegraf/1.19.1-titan Go/1.16.5"""
+23195,1671407953.0,"Dec 18 23:59:13 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""GET /api-v1/node-manager/app-version HTTP/1.0"" 200 61 ""-"" ""curl/7.64.0"""
+23196,1671407964.0,Dec 18 23:59:24 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310592/532305] 192.254.64.11 () {36 vars in 550 bytes} [] GET /api-v1/node-manager/config-v2 => generated 0 bytes in 160 msecs (HTTP/1.0 304) 8 headers in 256 bytes (0 switches on core 0)
+23197,1671407965.0,Dec 18 23:59:25 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310593/532306] 192.254.64.11 () {38 vars in 561 bytes} [] POST /api-v1/node-manager/metrics/vpp-v2 => generated 0 bytes in 276 msecs (HTTP/1.0 201) 7 headers in 206 bytes (1 switches on core 0)
+23198,1671407975.066,Dec 18 23:59:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: execute() (cbbede5f-fb18-4cfb-8d10-9f9db714afad)
+23199,1671407975.075,Dec 18 23:59:35 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    Running job updates
+23200,1671407975.086,Dec 18 23:59:35 secpctbmgr1 6d23e148f79a[620]: INFO  updates.models attempting move from state: dl_checking
+23201,1671407975.087,"Dec 18 23:59:35 secpctbmgr1 6d23e148f79a[620]: INFO  updates.models after move, update in state: dl_checking"
+23202,1671407975.089,Dec 18 23:59:35 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    finished job updates in 0.014068884775042534 seconds
+23203,1671407975.091,Dec 18 23:59:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: Job OK (cbbede5f-fb18-4cfb-8d10-9f9db714afad)
+23204,1671407994.0,Dec 18 23:59:54 secpctbmgr1 aa95177baeb3[620]: [pid: 33|app: 0|req: 221636/532307] 192.254.64.11 () {36 vars in 550 bytes} [] GET /api-v1/node-manager/config-v2 => generated 0 bytes in 161 msecs (HTTP/1.0 304) 8 headers in 256 bytes (0 switches on core 0)
+23206,1671408002.0,Dec 19 00:00:02 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310594/532308] 192.254.64.11 () {36 vars in 535 bytes} [] GET /api-v1/node-manager/cluster/config => generated 4 bytes in 263 msecs (HTTP/1.0 404) 8 headers in 248 bytes (1 switches on core 0)
+23205,1671408002.837,Dec 19 00:00:02 secpctbmgr1 aa95177baeb3[620]: WARNING  django.request Not Found: /api-v1/node-manager/cluster/config
+23207,1671408003.0,Dec 19 00:00:04 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310595/532309] 192.254.64.11 () {40 vars in 596 bytes} [] GET /api-v1/node-manager/auth => generated 0 bytes in 163 msecs (HTTP/1.0 200) 8 headers in 225 bytes (1 switches on core 0)
+23208,1671408004.0,"Dec 19 00:00:04 secpctbmgr1 fc6bcab8e1d6[620]: 192.254.64.10 - - [] ""POST /telegraf HTTP/1.0"" 204 0 ""-"" ""Telegraf/1.19.1-titan Go/1.16.5"""
+23209,1671408009.0,Dec 19 00:00:09 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310596/532310] 192.254.64.11 () {40 vars in 589 bytes} [] GET /api-v1/node-manager/auth => generated 0 bytes in 161 msecs (HTTP/1.0 200) 8 headers in 225 bytes (1 switches on core 0)
+23210,1671408011.0,"Dec 19 00:00:11 secpctbmgr1 fc6bcab8e1d6[620]: 192.254.64.10 - - [] ""GET /api-v1/node-manager/app-version HTTP/1.0"" 200 61 ""-"" ""curl/7.64.0"""
+23211,1671408012.0,"Dec 19 00:00:12 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""GET /api-v1/node-manager/app-version HTTP/1.0"" 200 61 ""-"" ""curl/7.64.0"""
+23212,1671408024.0,Dec 19 00:00:24 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310599/532313] 192.254.64.11 () {36 vars in 550 bytes} [] GET /api-v1/node-manager/config-v2 => generated 0 bytes in 160 msecs (HTTP/1.0 304) 8 headers in 256 bytes (0 switches on core 0)
+23213,1671408025.0,Dec 19 00:00:25 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310600/532314] 192.254.64.11 () {38 vars in 561 bytes} [] POST /api-v1/node-manager/metrics/vpp-v2 => generated 0 bytes in 264 msecs (HTTP/1.0 201) 7 headers in 206 bytes (1 switches on core 0)
+23214,1671408035.112,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: execute() (13fb1d9a-2cdf-4f7d-afce-e4aa3a830f27)
+23215,1671408035.121,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    Running job disk_space_low
+23216,1671408035.158,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    finished job disk_space_low in 0.03658160101622343 seconds
+23217,1671408035.159,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: Job OK (13fb1d9a-2cdf-4f7d-afce-e4aa3a830f27)
+23218,1671408035.162,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: execute() (387209b2-6b47-439e-97ef-141302a7df61)
+23219,1671408035.17,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    Running job certificate_expiration
+23220,1671408035.172,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: ERROR  rq.worker    Traceback (most recent call last):
+23221,1671408035.176,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: execute() (557aeda4-e5fe-407b-94fd-7debb4766a0f)
+23222,1671408035.183,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    Running job event_data_retention
+23223,1671408035.188,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  events.models prune results=None
+23224,1671408035.189,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: Job OK (557aeda4-e5fe-407b-94fd-7debb4766a0f)
+23225,1671408035.193,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: execute() (7774fe50-f0f7-4426-a370-71dea0043246)
+23226,1671408035.202,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    Running job no_data_alert
+23227,1671408035.222,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    finished job no_data_alert in 0.02068472607061267 seconds
+23228,1671408035.224,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: Job OK (7774fe50-f0f7-4426-a370-71dea0043246)
+23229,1671408035.227,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: execute() (c138fcb4-0c8d-4624-a602-29e5ba333671)
+23230,1671408035.234,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    Running job node_dropping_packets
+23231,1671408035.257,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    finished job node_dropping_packets in 0.023152593057602644 seconds
+23232,1671408035.259,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: Job OK (c138fcb4-0c8d-4624-a602-29e5ba333671)
+23233,1671408035.263,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: execute() (c6c4c48c-d2d5-41fc-81c7-1c7cc73c695d)
+23234,1671408035.27,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    Running job metrics_data_retention
+23235,1671408035.294,"Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.jobs    disk used_percent at 11.319827211272335, threshold is 20, not pruning"
+23236,1671408035.295,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: Job OK (c6c4c48c-d2d5-41fc-81c7-1c7cc73c695d)
+23237,1671408035.296,"Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    Result will never expire, clean up result key manually"
+23238,1671408035.299,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: execute() (cbbede5f-fb18-4cfb-8d10-9f9db714afad)
+23239,1671408035.306,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    Running job updates
+23240,1671408035.315,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  updates.models attempting move from state: dl_checking
+23241,1671408035.316,"Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  updates.models after move, update in state: dl_checking"
+23242,1671408035.319,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    finished job updates in 0.01323600485920906 seconds
+23243,1671408035.32,Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: Job OK (cbbede5f-fb18-4cfb-8d10-9f9db714afad)
+23244,1671408035.321,"Dec 19 00:00:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    Result will never expire, clean up result key manually"
+23245,1671408054.0,Dec 19 00:00:54 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310601/532315] 192.254.64.11 () {36 vars in 550 bytes} [] GET /api-v1/node-manager/config-v2 => generated 0 bytes in 160 msecs (HTTP/1.0 304) 8 headers in 256 bytes (0 switches on core 0)
+23248,1671408062.0,Dec 19 00:01:03 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310602/532316] 192.254.64.11 () {36 vars in 535 bytes} [] GET /api-v1/node-manager/cluster/config => generated 4 bytes in 164 msecs (HTTP/1.0 404) 8 headers in 248 bytes (1 switches on core 0)
+23247,1671408063.0,"Dec 19 00:01:03 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""GET /api-v1/node-manager/cluster/config HTTP/1.0"" 404 4 ""-"" ""python-requests/2.21.0"""
+23246,1671408063.05,Dec 19 00:01:03 secpctbmgr1 aa95177baeb3[620]: WARNING  django.request Not Found: /api-v1/node-manager/cluster/config
+23249,1671408068.0,Dec 19 00:01:08 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310603/532317] 192.254.64.11 () {40 vars in 595 bytes} [] GET /api-v1/node-manager/auth => generated 0 bytes in 161 msecs (HTTP/1.0 200) 8 headers in 225 bytes (1 switches on core 0)
+23250,1671408071.0,"Dec 19 00:01:11 secpctbmgr1 fc6bcab8e1d6[620]: 192.254.64.10 - - [] ""GET /api-v1/node-manager/app-version HTTP/1.0"" 200 61 ""-"" ""curl/7.64.0"""
+23251,1671408072.0,Dec 19 00:01:13 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310605/532319] 192.254.64.11 () {40 vars in 589 bytes} [] GET /api-v1/node-manager/auth => generated 0 bytes in 161 msecs (HTTP/1.0 200) 8 headers in 225 bytes (1 switches on core 0)
+23252,1671408073.0,"Dec 19 00:01:13 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""POST /telegraf HTTP/1.0"" 204 0 ""-"" ""Telegraf/1.19.1-titan Go/1.16.5"""
+23253,1671408084.0,"Dec 19 00:01:24 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""GET /api-v1/node-manager/config-v2 HTTP/1.0"" 304 0 ""-"" ""Go-http-client/1.1"""
+23254,1671408085.0,Dec 19 00:01:25 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310607/532322] 192.254.64.11 () {38 vars in 561 bytes} [] POST /api-v1/node-manager/metrics/vpp-v2 => generated 0 bytes in 267 msecs (HTTP/1.0 201) 7 headers in 206 bytes (1 switches on core 0)
+23255,1671408093.008,Dec 19 00:01:33 secpctbmgr1 0fb947e570c1[620]: 1:M  * 100 changes in 300 seconds. Saving...
+23256,1671408093.011,Dec 19 00:01:33 secpctbmgr1 0fb947e570c1[620]: 12986:C  * DB saved on disk
+23257,1671408093.108,Dec 19 00:01:33 secpctbmgr1 0fb947e570c1[620]: 1:M  * Background saving terminated with success
+23258,1671408095.12,Dec 19 00:01:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: execute() (cbbede5f-fb18-4cfb-8d10-9f9db714afad)
+23259,1671408095.128,Dec 19 00:01:35 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    Running job updates
+23260,1671408095.139,Dec 19 00:01:35 secpctbmgr1 6d23e148f79a[620]: INFO  updates.models attempting move from state: dl_checking
+23261,1671408095.14,"Dec 19 00:01:35 secpctbmgr1 6d23e148f79a[620]: INFO  updates.models after move, update in state: dl_checking"
+23262,1671408095.142,Dec 19 00:01:35 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    finished job updates in 0.014101073145866394 seconds
+23263,1671408095.144,Dec 19 00:01:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: Job OK (cbbede5f-fb18-4cfb-8d10-9f9db714afad)
+23264,1671408114.0,Dec 19 00:01:54 secpctbmgr1 aa95177baeb3[620]: [pid: 33|app: 0|req: 221638/532323] 192.254.64.11 () {36 vars in 550 bytes} [] GET /api-v1/node-manager/config-v2 => generated 0 bytes in 162 msecs (HTTP/1.0 304) 8 headers in 256 bytes (0 switches on core 0)
+23265,1671408122.0,Dec 19 00:02:02 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310608/532324] 192.254.64.11 () {40 vars in 596 bytes} [] GET /api-v1/node-manager/auth => generated 0 bytes in 161 msecs (HTTP/1.0 200) 8 headers in 225 bytes (1 switches on core 0)
+23267,1671408123.0,Dec 19 00:02:03 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310609/532325] 192.254.64.11 () {36 vars in 536 bytes} [] GET /api-v1/node-manager/cluster/config => generated 4 bytes in 163 msecs (HTTP/1.0 404) 8 headers in 248 bytes (1 switches on core 0)
+23266,1671408123.38,Dec 19 00:02:03 secpctbmgr1 aa95177baeb3[620]: WARNING  django.request Not Found: /api-v1/node-manager/cluster/config
+23268,1671408124.0,Dec 19 00:02:05 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310610/532326] 192.254.64.11 () {40 vars in 589 bytes} [] GET /api-v1/node-manager/auth => generated 0 bytes in 161 msecs (HTTP/1.0 200) 8 headers in 225 bytes (1 switches on core 0)
+23269,1671408125.0,"Dec 19 00:02:05 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""POST /telegraf HTTP/1.0"" 204 0 ""-"" ""Telegraf/1.19.1-titan Go/1.16.5"""
+23271,1671408131.0,Dec 19 00:02:12 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310611/532327] 192.254.64.11 () {34 vars in 489 bytes} [] GET /api-v1/node-manager/app-version => generated 61 bytes in 162 msecs (HTTP/1.0 200) 8 headers in 240 bytes (1 switches on core 0)
+23270,1671408132.0,"Dec 19 00:02:12 secpctbmgr1 fc6bcab8e1d6[620]: 192.254.64.10 - - [] ""GET /api-v1/node-manager/app-version HTTP/1.0"" 200 61 ""-"" ""curl/7.64.0"""
+23272,1671408133.0,"Dec 19 00:02:13 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""GET /api-v1/node-manager/app-version HTTP/1.0"" 200 61 ""-"" ""curl/7.64.0"""
+23273,1671408144.0,Dec 19 00:02:24 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310613/532329] 192.254.64.11 () {36 vars in 550 bytes} [] GET /api-v1/node-manager/config-v2 => generated 0 bytes in 160 msecs (HTTP/1.0 304) 8 headers in 256 bytes (0 switches on core 0)
+23274,1671408145.0,Dec 19 00:02:25 secpctbmgr1 aa95177baeb3[620]: [pid: 33|app: 0|req: 221639/532330] 192.254.64.11 () {38 vars in 561 bytes} [] POST /api-v1/node-manager/metrics/vpp-v2 => generated 0 bytes in 272 msecs (HTTP/1.0 201) 7 headers in 206 bytes (1 switches on core 0)
+23275,1671408155.125,Dec 19 00:02:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: execute() (cbbede5f-fb18-4cfb-8d10-9f9db714afad)
+23276,1671408155.135,Dec 19 00:02:35 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    Running job updates
+23277,1671408155.146,Dec 19 00:02:35 secpctbmgr1 6d23e148f79a[620]: INFO  updates.models attempting move from state: dl_checking
+23278,1671408155.149,Dec 19 00:02:35 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    finished job updates in 0.014716953039169312 seconds
+23279,1671408155.151,Dec 19 00:02:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: Job OK (cbbede5f-fb18-4cfb-8d10-9f9db714afad)
+23280,1671408174.0,"Dec 19 00:02:54 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""GET /api-v1/node-manager/config-v2 HTTP/1.0"" 304 0 ""-"" ""Go-http-client/1.1"""
+23282,1671408182.0,Dec 19 00:03:02 secpctbmgr1 aa95177baeb3[620]: [pid: 33|app: 0|req: 221640/532332] 192.254.64.11 () {36 vars in 536 bytes} [] GET /api-v1/node-manager/cluster/config => generated 4 bytes in 164 msecs (HTTP/1.0 404) 8 headers in 248 bytes (1 switches on core 0)
+23281,1671408182.691,Dec 19 00:03:02 secpctbmgr1 aa95177baeb3[620]: WARNING  django.request Not Found: /api-v1/node-manager/cluster/config
+23283,1671408185.0,Dec 19 00:03:05 secpctbmgr1 aa95177baeb3[620]: [pid: 33|app: 0|req: 221641/532334] 192.254.64.11 () {40 vars in 596 bytes} [] GET /api-v1/node-manager/auth => generated 0 bytes in 161 msecs (HTTP/1.0 200) 8 headers in 225 bytes (1 switches on core 0)
+23284,1671408191.0,"Dec 19 00:03:11 secpctbmgr1 fc6bcab8e1d6[620]: 192.254.64.10 - - [] ""GET /api-v1/node-manager/app-version HTTP/1.0"" 200 61 ""-"" ""curl/7.64.0"""
+23285,1671408192.0,"Dec 19 00:03:12 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""GET /api-v1/node-manager/app-version HTTP/1.0"" 200 61 ""-"" ""curl/7.64.0"""
+23286,1671408204.0,Dec 19 00:03:24 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310617/532337] 192.254.64.11 () {36 vars in 550 bytes} [] GET /api-v1/node-manager/config-v2 => generated 0 bytes in 159 msecs (HTTP/1.0 304) 8 headers in 256 bytes (0 switches on core 0)
+23287,1671408205.0,Dec 19 00:03:25 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310618/532338] 192.254.64.11 () {38 vars in 561 bytes} [] POST /api-v1/node-manager/metrics/vpp-v2 => generated 0 bytes in 264 msecs (HTTP/1.0 201) 7 headers in 206 bytes (1 switches on core 0)
+23288,1671408215.165,Dec 19 00:03:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: execute() (cbbede5f-fb18-4cfb-8d10-9f9db714afad)
+23289,1671408215.174,Dec 19 00:03:35 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    Running job updates
+23290,1671408215.185,Dec 19 00:03:35 secpctbmgr1 6d23e148f79a[620]: INFO  updates.models attempting move from state: dl_checking
+23291,1671408215.188,Dec 19 00:03:35 secpctbmgr1 6d23e148f79a[620]: INFO  jobs.base    finished job updates in 0.014281047973781824 seconds
+23292,1671408215.189,Dec 19 00:03:35 secpctbmgr1 6d23e148f79a[620]: INFO  rq.worker    default: Job OK (cbbede5f-fb18-4cfb-8d10-9f9db714afad)
+23293,1671408234.0,"Dec 19 00:03:54 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""GET /api-v1/node-manager/config-v2 HTTP/1.0"" 304 0 ""-"" ""Go-http-client/1.1"""
+23294,1671408241.0,Dec 19 00:04:01 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310620/532340] 192.254.64.11 () {40 vars in 596 bytes} [] GET /api-v1/node-manager/auth => generated 0 bytes in 161 msecs (HTTP/1.0 200) 8 headers in 225 bytes (1 switches on core 0)
+23297,1671408242.0,Dec 19 00:04:03 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310621/532341] 192.254.64.11 () {36 vars in 536 bytes} [] GET /api-v1/node-manager/cluster/config => generated 4 bytes in 163 msecs (HTTP/1.0 404) 8 headers in 248 bytes (1 switches on core 0)
+23296,1671408243.0,"Dec 19 00:04:03 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""GET /api-v1/node-manager/cluster/config HTTP/1.0"" 404 4 ""-"" ""python-requests/2.21.0"""
+23295,1671408243.037,Dec 19 00:04:03 secpctbmgr1 aa95177baeb3[620]: WARNING  django.request Not Found: /api-v1/node-manager/cluster/config
+23298,1671408251.0,"Dec 19 00:04:11 secpctbmgr1 c0abdbf1e08d[620]: 192.254.64.1 - - [] ""GET /api-v1/node-manager/app-version HTTP/1.1"" 200 61 ""-"" ""curl/7.64.0"""
+23299,1671408252.0,Dec 19 00:04:12 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310623/532343] 192.254.64.11 () {40 vars in 589 bytes} [] GET /api-v1/node-manager/auth => generated 0 bytes in 161 msecs (HTTP/1.0 200) 8 headers in 225 bytes (1 switches on core 0)
+23300,1671408253.0,"Dec 19 00:04:13 secpctbmgr1 fc6bcab8e1d6[620]: 10.18.0.2 - - [] ""GET /api-v1/node-manager/app-version HTTP/1.0"" 200 61 ""-"" ""curl/7.64.0"""
+23301,1671408264.0,Dec 19 00:04:24 secpctbmgr1 aa95177baeb3[620]: [pid: 34|app: 0|req: 310625/532345] 192.254.64.11 () {36 vars in 550 bytes} [] GET /api-v1/node-manager/config-v2 => generated 0 bytes in 160 msecs (HTTP/1.0 304) 8 headers in 256 bytes (0 switches on core 0)
