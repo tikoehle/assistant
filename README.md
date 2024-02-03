@@ -1,39 +1,77 @@
-# log_analysis
-Analysis of multimodal logging data, data preprocessing and cleanup.
-The dataset contains a mixture of different syslog generated log records including docker, systemd, /var/log and /proc data and the data has been collected by a software solution in response to some failure event.  
-The number of error incidents, the time when an incident occurred as well as the root cause are unclear.  
+# OpenAI Assistant API - Client Implementation
 
-## The Problem:
-Analyze the dataset and find all error incidents with their root cause. A initial error event can cause a number of additional error logs created by dependant services or components. There can be more than one root cause. Try to isolate different threads of root cause logged incidents. Retrieve the essential information from each error message and find relationships between the log messages. Such relationships in the data can represent the dependencies between the components and helps to isolate the root cause. The objective is to construct some form of automated reasoning which can identify root causes and provide instructions on how to fix the problem from an operational viewpoint.
+This project implements a Python client using OpenAIs Assistants API. An Assistant has instructions and can leverage models, tools, and knowledge to respond to user queries.
 
+## Installation
 
-## Approach 1: OpenAI Assistant API (Beta)
-The Assistants API allows you to build AI assistants within your own applications. An Assistant has instructions and can leverage models, tools, and knowledge to respond to user queries. This approach aims to use the LLM as a reasoner which detects the dependent log messages and their relationships and root cause.
+```
+pip install -U openai
+```
 
-This approach is based on system- and user prompt engineering. A client implementation has been written and provides the prompt, tools functions and dataset upload to the Assistants API.
+*Note:* Requires a OPENAI_API_KEY in .env and a paid plan for the Assistants API.
 
-### Result: Test passed (runtime 23 min)
+```
+cat .env
+OPENAI_API_KEY="sk-...."
+```
 
-It found the all 3 issues in the 200 lines timestamp normalized log file.
-1) disk_space_low            (docker)
-2) certificate_expiration    (journals/docker.service.log)
-3) Traceback                 (journals/docker.service.log). The stack trace info got lost in timestamp preprocessing.
+## Usage
 
-### Assistant Configuration
+```
+python ./client.py -h
+usage: client.py [-h] [-v] [-D]
 
-*Note:* Requires a OPENAI_API_KEY in a local .env and a paid plan for the Assistants API.
-The client.py creates a new assistant instance if none exists and it can also be configured in client.py. 
+OpenAI Assistant API Client (type 'exit' or CTRL-C to end).
+
+options:
+  -h, --help     show this help message and exit
+  -v, --verbose  verbose
+  -D, --debug    more verbose
+```
+
+## Example run with existing Assistant instance at OpenAI
+
+```
+python ./client.py
+
+Existing assistants:
+#0: asst_VxfQYPBeIs1e08DZcbBA5tbz
+                Model: gpt-4-1106-preview
+                Name: Traiage
+                Files: ['file-fUG736fDDiOg1ycNTGd6i7jy']
+                Instructions: You are a root-cause analyst and your task is to
+    analyze system log files for software issues like failure events
+    or critical conditions and their initial root cause or trigger.
+
+    Task 1: Process files and look for this pattern, example,
+    ERROR  rq.worker    Traceback (most recent call last).
+
+    Task 2: After you find these patterns, correlate with any log
+    messages with a lower timestamp and with matching IP address.
+    Do not consider recurring log messages if they contain or represent a failure.
+
+    Task 3: Summarize the results in a bullet list containing timestamps
+    in ascending order and including data from the log message.
+Select assistant [0..0] or create a new one [c]: 0
+You> exit
+Ending the conversation.
+```
+
+## Assistant Configuration
+
+The client.py creates a new assistant instance if none exists. The instructions prompt settings below are for some simple log file analysis use-case. The corresponding data set is in the files list and the data gets uploaded to your OpenAI assistant instance.
 
 ```
 In assist/client.py:
 
 """
 Assistant level settings
-    - Model
-    - Instructions: to guide the personality of the Assistant and define
-                    its goals (system prompt).
-    - Functions:    third-party tools integration via a function calling.
-    - Files:        tools access to own domain data.
+Assistant level settings
+    - model:                the OpenAI model of choice
+    - instructions:         to guide the personality of the Assistant and define its goals (system prompt)
+    - functions:            your own functions or third-party tools integration via a function calling
+    - files:                tools access to your own domain data, upload your data here
+    - message_instructions: thread (message) level prompt
 """
 
 traiage_args = {
@@ -67,7 +105,7 @@ traiage_args = {
         {"type": "function", "function": Schemas.getIpAddress},
     ],
     "files": [
-        "/home/tikoehle/work/outshift/log_analysis/data/test2.csv",
+        "/path/to/your/data.csv",
     ],
 }
 
@@ -81,57 +119,7 @@ message_instructions = """
 Analyze the input and format and structure the output."""
 ```
 
-### Run the Assistant
-
-```
-cd assist
-python3 ./client.py -h
-usage: client.py [-h] [-v] [-D]
-
-OpenAI Assistant API Client (type 'exit' or CTRL-C to end).
-
-options:
-  -h, --help     show this help message and exit
-  -v, --verbose  verbose
-  -D, --debug    more verbose
-(mayday) tikoehle@comp9:~/work/outshift/log_analysis/assist$
-
-
-(mayday) tikoehle@comp9:~/work/outshift/log_analysis/assist$ python3 ./client.py
-Existing assistants: 
-#0: asst_VxfQYPBeIs1e08DZcbBA5tbz
-                Model: gpt-4-1106-preview
-                Name: Traiage
-                Files: ['file-fUG736fDDiOg1ycNTGd6i7jy']
-                Instructions: You are a root-cause analyst and your task is to
-    analyze system log files for software issues like failure events
-    or critical conditions and their initial root cause or trigger.
-
-    Task 1: Process files and look for this pattern, example,
-    ERROR  rq.worker    Traceback (most recent call last).
-
-    Task 2: After you find these patterns, correlate with any log
-    messages with a lower timestamp and with matching IP address.
-    Do not consider recurring log messages if they contain or represent a failure.
-
-    Task 3: Summarize the results in a bullet list containing timestamps
-    in ascending order and including data from the log message.
-Select assistant [0..0] or create a new one [c]: 0
-You> exit
-Ending the conversation.
-```
-
-### Dataset
-
-```
-log_analysis/data/test2.csv
-```
-
-200 lines of timestamp normalized (UTC) logs from ```202212210001.426713456_timestamps.csv``` and containing three consecutive failure events.
-
-#### *Note:* The data has been cleaned and IP anonymized by swapping any IP address with a random one.
-
-### Conversation
+## Example Assistant Conversation
 
 ```
 You> Please analyze the attached file for any software issues.
@@ -166,9 +154,9 @@ From the context provided by these log messages, it seems that the `ERROR` appea
 The error message indicates that a traceback occurred, which suggests an exception was raised during job processing. Unfortunately, the actual exception and the stack trace are not included in the log line captured, but they would be critical to diagnose the precise issue. Typically, the traceback would provide the exact point of failure in the code.
 ```
 
-### Full logs
+## Conversation logging switched on.
 
-Assistant logging switched on. The JSON debugs show the assistant dispatched calls to the configured tools. In most cases the ```code_interpreter``` found the correct information using pandas. 
+The JSON debugs show the assistant dispatched calls to the configured tools. In most cases the ```code_interpreter``` found the correct information using pandas.
 
 ```
 

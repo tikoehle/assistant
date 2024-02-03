@@ -13,11 +13,11 @@ from tools.functioncalling import Schemas
 
 """
 Assistant level settings
-    - Model
-    - Instructions: to guide the personality of the Assistant and define
-                    its goals (system prompt).
-    - Functions:    third-party tools integration via a function calling.
-    - Files:        tools access to own domain data.
+    - model:                the OpenAI model of choice
+    - instructions:         to guide the personality of the Assistant and define its goals (system prompt)
+    - functions:            your own functions or third-party tools integration via a function calling
+    - files:                tools access to your own domain data, upload your data here
+    - message_instructions: thread (message) level prompt
 """
 traiage_args = {
     "name": "Traiage",
@@ -35,8 +35,8 @@ traiage_args = {
     Task 3: Summarize the results in a bullet list containing timestamps
     in ascending order and including data from the log message.""",
 
-    "model": "gpt-4-1106-preview",
-    # "model": "gpt-3.5-turbo-1106",
+    # "model": "gpt-4-1106-preview",
+    "model": "gpt-3.5-turbo-1106",
     "functions": [
         "Schemas.getSummary",
         "Schemas.getTimestampDelta",
@@ -51,7 +51,7 @@ traiage_args = {
         {"type": "function", "function": Schemas.getIpAddress},
     ],
     "files": [
-        "/home/tikoehle/work/outshift/log_analysis/data/test2.csv",
+        "/home/user/work/assistant/data/test2.csv",
     ],
 }
 
@@ -59,8 +59,7 @@ traiage_args = {
 Thread (message) level settings
     - additional instructions specific to the assistent and message.
 """
-message_instructions = """
-Analyze the input and format and structure the output."""
+message_instructions = "Analyze the input and format and structure the output."
 
 """
 Main conversation event loop
@@ -70,7 +69,7 @@ Main conversation event loop
 def main():
     api_key = (dotenv.dotenv_values()).get("OPENAI_API_KEY")
     traiage = OpenAIAssistant(
-        filepath="/home/tikoehle/Downloads/", api_key=api_key, kwargs=traiage_args
+        filepath="/home/user/Downloads/", api_key=api_key, kwargs=traiage_args
     )
     conversation = ConversationFactory.create_assistant(traiage)
     while True:
