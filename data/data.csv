@@ -1,0 +1,3 @@
+,UTC,Message
+23102,1671407614.807,Dec 18 23:53:34 secpctbmgr1 6e23e148f79a[610]: INFO  updates.models attempting move from state: dls_check
+23103,1671407614.81,Dec 18 23:53:34 secpctbmgr1 6e23e148f79a[610]: INFO  jobs.base    finished job updates in 0.01437359480126381 seconds
