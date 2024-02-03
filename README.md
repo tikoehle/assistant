@@ -38,7 +38,6 @@ In assistant/client.py:
 
 """
 Assistant level settings
-Assistant level settings
     - model:                the OpenAI model of choice
     - instructions:         to guide the personality of the Assistant and define its goals (system prompt)
     - functions:            your own functions or third-party tools integration via a function calling
@@ -87,8 +86,7 @@ Thread (message) level settings
     - additional instructions specific to the assistent and message.
 """
 
-message_instructions = """
-Analyze the input and format and structure the output."""
+message_instructions = "Analyze the input and format and structure the output."
 ```
 
 ## Example run with existing Assistant instance at OpenAI

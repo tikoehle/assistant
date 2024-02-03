@@ -69,7 +69,7 @@ Main conversation event loop
 def main():
     api_key = (dotenv.dotenv_values()).get("OPENAI_API_KEY")
     traiage = OpenAIAssistant(
-        filepath="/home/user/Downloads/", api_key=api_key, kwargs=traiage_args
+        filepath="/home/user/Downloads/", api_key=api_key, kwargs=tim_args
     )
     conversation = ConversationFactory.create_assistant(traiage)
     while True:
