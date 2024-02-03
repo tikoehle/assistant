@@ -19,8 +19,8 @@ Assistant level settings
     - files:                tools access to your own domain data, upload your data here
     - message_instructions: thread (message) level prompt
 """
-traiage_args = {
-    "name": "Traiage",
+tim_args = {
+    "name": "tim",
     "instructions": """You are a root-cause analyst and your task is to
     analyze system log files for software issues like failure events
     or critical conditions and their initial root cause or trigger.
@@ -51,7 +51,7 @@ traiage_args = {
         {"type": "function", "function": Schemas.getIpAddress},
     ],
     "files": [
-        "/home/user/work/assistant/data/test2.csv",
+        "/home/user/assistant/data/data.csv",
     ],
 }
 

@@ -29,40 +29,12 @@ options:
   -D, --debug    more verbose
 ```
 
-## Example run with existing Assistant instance at OpenAI
-
-```
-python ./client.py
-
-Existing assistants:
-#0: asst_VxfQYPBeIs1e08DZcbBA5tbz
-                Model: gpt-4-1106-preview
-                Name: Traiage
-                Files: ['file-fUG736fDDiOg1ycNTGd6i7jy']
-                Instructions: You are a root-cause analyst and your task is to
-    analyze system log files for software issues like failure events
-    or critical conditions and their initial root cause or trigger.
-
-    Task 1: Process files and look for this pattern, example,
-    ERROR  rq.worker    Traceback (most recent call last).
-
-    Task 2: After you find these patterns, correlate with any log
-    messages with a lower timestamp and with matching IP address.
-    Do not consider recurring log messages if they contain or represent a failure.
-
-    Task 3: Summarize the results in a bullet list containing timestamps
-    in ascending order and including data from the log message.
-Select assistant [0..0] or create a new one [c]: 0
-You> exit
-Ending the conversation.
-```
-
 ## Assistant Configuration
 
 The client.py creates a new assistant instance if none exists. The instructions prompt settings below are for some simple log file analysis use-case. The corresponding data set is in the files list and the data gets uploaded to your OpenAI assistant instance.
 
 ```
-In assist/client.py:
+In assistant/client.py:
 
 """
 Assistant level settings
@@ -74,8 +46,8 @@ Assistant level settings
     - message_instructions: thread (message) level prompt
 """
 
-traiage_args = {
-    "name": "Traiage",
+tim_args = {
+    "name": "tim",
     "instructions": """You are a root-cause analyst and your task is to
     analyze system log files for software issues like failure events
     or critical conditions and their initial root cause or trigger.
@@ -105,7 +77,7 @@ traiage_args = {
         {"type": "function", "function": Schemas.getIpAddress},
     ],
     "files": [
-        "/path/to/your/data.csv",
+        "/home/user/assistant/data/data.csv",
     ],
 }
 
@@ -117,6 +89,34 @@ Thread (message) level settings
 
 message_instructions = """
 Analyze the input and format and structure the output."""
+```
+
+## Example run with existing Assistant instance at OpenAI
+
+```
+python ./client.py
+
+Existing assistants:
+#0: asst_VxfQYPYeIs1e08DScbBA5tbz
+                Model: gpt-4-1106-preview
+                Name: tim
+                Files: ['file-fUG736fDSiOg1ycYTGd6i7jy']
+                Instructions: You are a root-cause analyst and your task is to
+    analyze system log files for software issues like failure events
+    or critical conditions and their initial root cause or trigger.
+
+    Task 1: Process files and look for this pattern, example,
+    ERROR  rq.worker    Traceback (most recent call last).
+
+    Task 2: After you find these patterns, correlate with any log
+    messages with a lower timestamp and with matching IP address.
+    Do not consider recurring log messages if they contain or represent a failure.
+
+    Task 3: Summarize the results in a bullet list containing timestamps
+    in ascending order and including data from the log message.
+Select assistant [0..0] or create a new one [c]: 0
+You> exit
+Ending the conversation.
 ```
 
 ## Example Assistant Conversation
